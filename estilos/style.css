@@ -1,0 +1,101 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+}
+    body{
+background-color: rgb(196, 196, 196);
+min-height: 100vh;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    gap: 0px 0px;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+}
+
+/* HEADER */
+header {
+    background-color: rgb(63, 12, 32);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    grid-area: header;
+}
+
+.header h1{
+    color: rgb(255, 222, 138);
+    letter-spacing: 5px;
+}
+
+.header nav ul{
+    list-style: none;
+    display: flex;
+}
+
+.header nav ul li{
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.header nav ul li a{
+    text-decoration: none;
+    color:rgb(255, 222, 138);
+}
+
+/* MAIN */
+.main section{
+    display:flexbox;
+    list-style: none;
+    text-align: left;    
+    color: white;
+    grid-area: main;
+}
+
+h2{
+    color: rgb(18, 114, 121);
+    text-align: center;
+}
+
+h3{
+    color:rgb(18, 114, 121);
+    text-align: center;
+}
+
+
+/* FOOTER */
+.footer {
+    background-color: black;
+    display: flex;
+    bottom: 0;
+    justify-content: space-around;
+    align-items: flex-start;
+    grid-area: footer;
+}
+
+.footer div{
+    display:inline-block;
+    align-items:center;
+}
+
+.footer p{
+    color: rgb(255, 222, 138);
+    align-content: center;
+}
+
+.footer ul{
+    list-style: none;
+}
+
+.footer ul li a{
+    text-decoration: none;
+    text-align: left;
+    color:rgb(255, 222, 138);
+}
