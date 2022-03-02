@@ -11,13 +11,12 @@ min-height: 100vh;
 
 .grid-container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.5fr 1fr 0.5fr;
     gap: 0px 0px;
     grid-template-areas: 
-    "header header"
-    "main main"
-    "footer footer";
+    "header"
+    "main"
+    "footer";
 }
 
 /* HEADER */
@@ -87,20 +86,13 @@ h3{
 .footer {
     background-color: black;
     display: flex;
-    bottom: 0;
     justify-content: space-around;
     align-items: flex-start;
     grid-area: footer;
 }
 
-.footer div{
-    display:inline-block;
-    align-items:center;
-}
-
 .footer p{
     color: rgb(255, 222, 138);
-    align-content: center;
 }
 
 .footer ul{
@@ -111,4 +103,42 @@ h3{
     text-decoration: none;
     text-align: left;
     color:rgb(255, 222, 138);
+}
+
+/**** PRIMER BREAKPOINT ****/
+
+@media(max-width:768px){
+    header{
+    display:block;
+    text-align: center;
+    padding-bottom: 15px;
+    }
+
+    .header h1{
+    display: none;
+    }
+
+    .header nav ul li a{
+    padding: 10px 30px;
+    }
+}
+
+/****SEGUNDO BREAKPOINT ****/
+@media(min-width:769px) and (max-width:923px){
+    .header{
+    display: block;
+    text-align: center;
+    padding-bottom: 15px;
+    }
+
+    .header h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    }
+
+    .header nav ul li a{
+    padding: 20px 50px;
+    }
 }
