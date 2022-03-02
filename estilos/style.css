@@ -54,10 +54,7 @@ header {
     color:rgb(255, 222, 138);
 }
 
-.header nav ul li:hover{
-    transform: scale(1.5);
-    transition: all 2s;
-}
+
 
 /* MAIN */
 .main section{
@@ -78,10 +75,7 @@ h3{
     text-align: center;
 }
 
-.main section ul div:hover{
-    transform:translateX(200px);
-    transition: all 5s;
-}
+
 /* FOOTER */
 .footer {
     background-color: black;
@@ -103,42 +97,4 @@ h3{
     text-decoration: none;
     text-align: left;
     color:rgb(255, 222, 138);
-}
-
-/**** PRIMER BREAKPOINT ****/
-
-@media(max-width:768px){
-    header{
-    display:block;
-    text-align: center;
-    padding-bottom: 15px;
-    }
-
-    .header h1{
-    display: none;
-    }
-
-    .header nav ul li a{
-    padding: 10px 30px;
-    }
-}
-
-/****SEGUNDO BREAKPOINT ****/
-@media(min-width:769px) and (max-width:923px){
-    .header{
-    display: block;
-    text-align: center;
-    padding-bottom: 15px;
-    }
-
-    .header h1{
-    display: flex;
-    justify-content: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    }
-
-    .header nav ul li a{
-    padding: 20px 50px;
-    }
 }
