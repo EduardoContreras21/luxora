@@ -66,9 +66,16 @@ header {
 }
 
 .main section div{
-    width: 600px;
-    padding: 50px;
-    margin: 50px;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.main div{
+    color: white;
+    text-align: center;
+    margin-top: 15px;
 }
 
 h2{
@@ -98,6 +105,7 @@ h3{
 .main section div{
     padding-top:35px;
 }
+
 /* FOOTER */
 .footer {
     background-color: black;
