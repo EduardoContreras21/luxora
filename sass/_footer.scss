@@ -1,0 +1,16 @@
+.footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: footer;
+    color: rgb(255, 222, 138);
+    div p {
+        color: rgb(255, 222, 138);
+        margin-bottom: 15px;
+        div a {
+            display: flex;
+            margin-top: 15px;
+        }
+    }
+}

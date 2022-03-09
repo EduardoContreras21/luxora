@@ -1,179 +1,79 @@
-*{
-padding: 0;
-margin: 0;
+* {
+  padding: 0;
+  margin: 0; }
 
-}
-    body{
-background-color: rgb(196, 196, 196);
-min-height: 100vh;
-}
-
-.grid-container{
+body {
+  background-color: #c4c4c4;
+  min-height: 100vh; }
+  body grid-container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.1fr 1fr 0.1fr;
     gap: 0px;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
-}
+    grid-template-areas: "header" "main" "footer"; }
 
-/* HEADER */
 header {
-    background-color: rgb(63, 12, 32);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    grid-area: header;
-}
+  background-color: #3f0c20;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: header; }
+  header h1 {
+    color: #ffde8a;
+    letter-spacing: 5px; }
+    header h1 nav ul {
+      list-style: none;
+      display: flex;
+      background-color: #3f0c20;
+      margin: 0; }
+      header h1 nav ul li {
+        margin-left: 10px;
+        margin-right: 10px; }
+        header h1 nav ul li:hover {
+          background-color: #c4c4c4; }
+          header h1 nav ul li:hover a {
+            text-decoration: none;
+            color: #ffde8a; }
 
-.header h1{
-    color: rgb(255, 222, 138);
-    letter-spacing: 5px;
-}
-
-.header nav ul{
-    list-style: none;
-    display: flex;
-    background-color: rgb(63, 12, 32);
-    margin: 0;
-}
-
-.header nav ul li{
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.header nav ul li a{
-    text-decoration: none;
-    color:rgb(255, 222, 138);
-}
-
-.header nav ul li:hover{
-    transform: scale(1.2);
-    transition: all 2s;
-}
-
-/* MAIN */
-.main section{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;   
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  color: white;
+  grid-area: main; }
+  section div {
     color: white;
-    grid-area: main;
-}
-
-.main section div{
+    text-align: center;
+    margin-top: 15px;
     padding: 5px;
     margin: 5px;
     display: flex;
     justify-content: center;
-}
+    padding-top: 35px; }
+    section div h2 {
+      color: #127279;
+      text-align: center; }
+      section div h2 h3 {
+        color: #127279;
+        text-align: center; }
+        section div h2 h3 p {
+          text-align: center; }
+          section div h2 h3 p:hover {
+            background-color: #c4c4c4;
+            transform: scale(1.2);
+            transition: all 2s; }
 
-.main div{
-    color: white;
-    text-align: center;
-    margin-top: 15px;
-}
-
-h2{
-    color: rgb(18, 114, 121);
-    text-align: center;
-}
-
-h3{
-    color:rgb(18, 114, 121);
-    text-align: center;
-}
-
-.main section ul div{
-    list-style: none;
-    text-align: center;
-}
-
-.main section ul div:hover{
-    transform: translateX(20px);
-    transition: all 5s;
-}
-
-.main section div p{
-    text-align: center;
-}
-
-.main section div{
-    padding-top:35px;
-}
-
-/* FOOTER */
 .footer {
-    background-color: black;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    grid-area: footer;
-    color: rgb(255, 222, 138);
-}
-
-.footer div p{
-    color: rgb(255, 222, 138);
-    margin-bottom: 15px;
-}
-
-.footer div a{
-    display: flex;
-    margin-top: 15px;
-}
-
-
-/**** PRIMER BREAKPOINT (VISTA CELULAR)****/
-
-@media(max-width: 768px){
-    .header{
-    display: block;
-    text-align: center;
-    padding-bottom: 15px;
-    }
-
-    .header h1{
-    display: none;
-    }
-
-    .header nav button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
-
-    .main section{
-    justify-content: center;
-    columns: 2;
-    }
-}
-
-/**** SEGUNDO BREAKPOINT (VISTA TABLET) ****/
-
-@media(min-width:769px) and (max-width:923px){
-    .header{
-    display: block;
-    text-align: center;
-    padding-bottom: 15px;
-    }
-
-    .header h1{
-    display: flex;
-    justify-content: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    }
-
-    .main div h2{
-    text-align: center;
-    }
-
-    .main section{
-    justify-content: center;
-    columns: 2;
-    }
-}
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  grid-area: footer;
+  color: #ffde8a; }
+  .footer div p {
+    color: #ffde8a;
+    margin-bottom: 15px; }
+    .footer div p div a {
+      display: flex;
+      margin-top: 15px; }
