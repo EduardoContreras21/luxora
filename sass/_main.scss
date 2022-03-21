@@ -5,6 +5,7 @@ section {
     list-style: none;
     color: white;
     grid-area: main;
+
     div {
         color: white;
         text-align: center;
@@ -14,14 +15,18 @@ section {
         display: flex;
         justify-content: center;
         padding-top: 35px;
+
         h2 {
             color: rgb(18, 114, 121);
             text-align: center;
+
             h3 {
                 color: rgb(18, 114, 121);
                 text-align: center;
+
                 p {
                     text-align: center;
+
                     &:hover {
                         background-color: $primarycolor;
                         transform: scale(1.2);
@@ -29,6 +34,208 @@ section {
                     }
                 }
             }
+        }
+    }
+}
+
+.hero {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    background: #fff;
+    padding: 50px;
+
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        grid-area: main;
+        padding: 0 4%;
+
+        h2,
+        h3 {
+            color: rgb(2, 126, 126);
+        }
+    }
+}
+
+.servicios-principales.etiquetas {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+
+    .etiquetas {
+        margin: 20px 0;
+
+        .etiquetas .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .etiquetas .container>div {
+                flex-basis: 33%;
+                min-width: 300px;
+                max-width: 300px;
+                margin: 20px;
+            }
+        }
+    }
+}
+
+.info-section {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    background: white;
+    justify-content: center;
+    text-align: justify;
+    padding: 50px 4%;
+    flex-direction: column;
+
+    .info-contenido {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        width: 100%;
+
+        .info-contenido>div {
+            flex-basis: 33%;
+            min-width: 300px;
+            max-width: 300px;
+            margin: 20px;
+
+            .info-contenido>div:first-child {
+                margin-left: 0;
+
+                .info-contenido .info-label {
+                    font-size: 1.2rem;
+
+                    .info-contenido .info-title {
+                        font-size: 2rem;
+                    }
+
+                    .info {
+                        display: flex;
+                        justify-content: center;
+
+                        .info-item {
+                            display: flex;
+                            flex-direction: column;
+                            max-width: 200px;
+                            width: 200px;
+
+                            .info-label {
+                                font-size: 1.5rem;
+                                color: gray;
+
+                                .info-title {
+                                    font-size: 2.5rem;
+
+                                    .info-servicios {
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        justify-content: center;
+
+                                        .info-servicios>div {
+                                            flex-basis: 33%;
+                                            min-width: 300px;
+                                            max-width: 300px;
+                                            margin: 20px;
+
+                                            .info-servicios>div:first-child {
+                                                margin-left: 0;
+
+                                                .info-servicios .info-label {
+                                                    font-size: 1.2rem;
+
+                                                    .info-servicios .info-title {
+                                                        font-size: 2rem;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// NOSOTROS//
+.carousel-photos {
+    max-width: 70%;
+    min-width: 320px;
+    margin: 50px auto;
+
+    .carousel-photos img {
+        max-height: 400px;
+    }
+}
+
+//SERVICIOS//
+.main-subpage {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+
+    .main-subpage h2 {
+        padding: 0 4%;
+    }
+}
+
+//PRECIOS//
+.precios-contenido {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    max-width: 1200px;
+
+    .precios-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        border-bottom: 3px solid gray;
+
+        .precios-lista {
+            margin-top: 30px;
+
+            .precios-item {
+                display: flex;
+                justify-content: space-between;
+                padding: 20px;
+
+                .precios-item h5 {
+                    text-transform: uppercase;
+
+                    .precios-item p {
+                        padding-right: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//CONTACTO//
+.formulario-contacto {
+    max-width: 1000px;
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    margin: 40px auto;
+    flex-direction: column;
+
+    .forma-contacto {
+        margin-bottom: 20px;
+
+        .forma-contacto p:first-child {
+            font-weight: bold;
         }
     }
 }

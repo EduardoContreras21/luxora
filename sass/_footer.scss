@@ -1,16 +1,42 @@
 .footer {
     background-color: black;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
+    text-align: center;
     grid-area: footer;
-    color: rgb(255, 222, 138);
-    div p {
-        color: rgb(255, 222, 138);
-        margin-bottom: 15px;
-        div a {
+    color: #ffde8a;
+
+    .snfooter {
+        margin-top: 20px;
+
+        .encabezado-footer {
             display: flex;
-            margin-top: 15px;
+            justify-content: space-around;
+            border-top: 3px solid #ffde8a;
+
+            .footer div p {
+                color: #ffde8a;
+                margin-bottom: 15px;
+
+                .footer div p div a {
+                    display: flex;
+                    margin-top: 15px;
+
+                    .navbar-footer {
+                        list-style: none;
+                        text-align: left;
+
+                        .nav-foot {
+                            text-decoration: none;
+                            color: #ffde8a;
+
+                            .derechos-reservados {
+                                text-align: end;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
