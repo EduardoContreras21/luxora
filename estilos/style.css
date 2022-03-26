@@ -191,7 +191,11 @@ section {
   font-size: 2rem;
 }
 
-@media (max-width: 768px) {
+@media (min-width:385px) and (max-width: 768px) {
+  .logo{
+    width: 75%;
+  }
+
   h1{
     display: none;
   }
