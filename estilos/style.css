@@ -25,6 +25,13 @@ body {
     background-color: #3f0c20;
   }
 
+  .navbar-light #navbarNavDropdown .navbar-nav .nav-link.active,
+  .navbar-light #navbarNavDropdown .navbar-nav .show>.nav-link,
+  .navbar-light #navbarNavDropdown .navbar-nav .nav-link:hover {
+  background-color: #701538;
+  border-radius: 5px;
+  }
+
 header {
   background-color: #3f0c20;
   display: flex;
@@ -34,25 +41,8 @@ header {
   width: 100%;
   margin: 0 auto;
   grid-area: header;
-
 }
-  header h1 {
-    color: #ffde8a;
-    letter-spacing: 5px;
-    text-align: center; }
-    header h1 nav ul {
-      list-style: none;
-      display: flex;
-      background-color: #3f0c20;
-      margin: 0; }
-      header h1 nav ul li {
-        margin-left: 10px;
-        margin-right: 10px; }
-        header h1 nav ul li:hover {
-          background-color: #c4c4c4; }
-          header h1 nav ul li:hover a {
-            text-decoration: none;
-            color: #ffde8a; }
+
 
 .hero {
   width: 100%;
@@ -60,9 +50,9 @@ header {
   margin: 0 auto;
   background: #fff;
   padding: 50px;
-} h2, h3{
-  color: rgb(2, 126, 126);
-
+} h1, h2, h3{
+  color: #ffde8a;
+  background-color: #3f0c20;
 }
 
 section {
@@ -78,6 +68,7 @@ section {
   display: flex;
   flex-direction: column;
   margin-top: 50px;
+  background-color: #3f0c20;
 }
 
 .etiquetas {
@@ -95,6 +86,8 @@ section {
   min-width: 300px;
   max-width: 300px;
   margin: 20px;
+  background-color: #3f0c20;
+  color: white;
 }
 
 .formulario-contacto {
@@ -127,6 +120,7 @@ section {
 
 .info-contenido {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 20px;
   width: 100%;
@@ -198,8 +192,21 @@ section {
 }
 
 @media (max-width: 768px) {
+  h1{
+    display: none;
+  }
+
+  h2{
+  text-align: center;
+  }
+
   .info {
     padding: 0 4%;
+  }
+
+  .info-contenido{
+  max-width: 100%;
+  width: 100%;
   }
 
   .info-item, .info-servicios .info {
@@ -207,17 +214,13 @@ section {
     width: 100%;
   }
 
-  .info-servicios > div {
-    margin-left: 0;
+  .derechos{
+    width: 75%;
   }
 
-  .info-item, .info-contenido .info {
-    max-width: 100%;
-    width: 100%;
-  }
-
-  .info-contenido > div {
-    margin-left: 0;
+  .direccion{
+    width: 75%;
+    display: inline-block;
   }
 }
 
@@ -232,12 +235,25 @@ section {
 }
 
 @media (max-width: 1024px) {
+  h2{
+  text-align: center;
+  }
+
   .hero {
     flex-direction: column;
   }
 
   .hero .video {
     margin-bottom: 50px;
+  }
+
+  .derechos{
+    width: 75%;
+  }
+
+  .direccion{
+    width: 75%;
+    display: inline-block;
   }
 }
 
@@ -303,22 +319,18 @@ section {
   border-top: 3px solid #ffde8a;
 }
 
-  .footer div p {
-    color: #ffde8a;
-    margin-bottom: 15px; }
-    .footer div p div a {
-      display: flex;
-      margin-top: 15px; }
+.encuentranos{
+  margin-top: 10px;
+}
 
 .navbar-footer{ 
   list-style: none;
   text-align:left;
+  margin-bottom: 32px;
   }
 
   .nav-foot{
     text-decoration: none;
     color: #ffde8a;
   }
-  .derechos-reservados{
-    text-align: end;
-  }
+
