@@ -191,7 +191,7 @@ section {
   font-size: 2rem;
 }
 
-@media (min-width:385px) and (max-width: 768px) {
+@media (min-width:336px) and (max-width: 768px) {
   .logo{
     width: 75%;
   }
@@ -204,20 +204,6 @@ section {
   text-align: center;
   }
 
-  .info {
-    padding: 0 4%;
-  }
-
-  .info-contenido{
-  max-width: 100%;
-  width: 100%;
-  }
-
-  .info-item, .info-servicios .info {
-    max-width: 100%;
-    width: 100%;
-  }
-
   .derechos{
     width: 75%;
   }
@@ -226,16 +212,6 @@ section {
     width: 75%;
     display: inline-block;
   }
-}
-
-.main-subpage {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 50px 0;
-}
-
-.main-subpage h2 {
-  padding: 0 4%;
 }
 
 @media (max-width: 1024px) {
@@ -261,6 +237,15 @@ section {
   }
 }
 
+.main-subpage {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.main-subpage h2 {
+  padding: 0 4%;
+}
 .carousel-photos {
   max-width: 85%;
   min-width: 320px;
