@@ -43,7 +43,6 @@ header {
   grid-area: header;
 }
 
-
 .hero {
   width: 100%;
   display: flex;
@@ -191,9 +190,25 @@ section {
   font-size: 2rem;
 }
 
-@media (min-width:336px) and (max-width: 768px) {
+@media (max-width:385px){
+.logo{
+  height:10%;
+  width: 10%;
+}
+
+h1{
+  display: none;
+}
+
+.direccion{
+  margin-top: 33px;
+}
+}
+
+@media (min-width:386px) and (max-width: 768px) {
   .logo{
-    width: 75%;
+    height: 50%;
+    width: 50%;
   }
 
   h1{

@@ -1,36 +1,33 @@
 header {
-    @include colores_display(#3f0c20,flex);
+    background-color: rgb(63, 12, 32);
+    display: flex;
     justify-content: space-between;
     align-items: center;
     grid-area: header;
 
-    .navbar-light #navbarNavDropdown .navbar-nav .nav-link.active,
-    .navbar-light #navbarNavDropdown .navbar-nav .show>.nav-link,
-    .navbar-light #navbarNavDropdown .navbar-nav .nav-link {
-        color: #ffde8a;
-        background-color: #3f0c20;
-
-        h1 {
-            color: rgb(255, 222, 138);
-            letter-spacing: 5px;
+    h1 {
+        color: rgb(255, 222, 138);
+        letter-spacing: 5px;
 
         nav {
-                ul {
-                    list-style: none;
-                    @include colores_display(#3f0c20,flex);
-                    margin: 0;
+            ul {
+                list-style: none;
+                display: flex;
+                background-color: rgb(63, 12, 32);
+                margin: 0;
 
-                    li {
-                        margin-left: 10px;
-                        margin-right: 10px;
+                li {
+                    margin-left: 10px;
+                    margin-right: 10px;
 
-                        &:hover {
-                            background-color: $primarycolor;
+                    &:hover {
+                        background-color: $primarycolor;
+                        transform: scale(1.2);
+                        transition: all 2s;
 
-                            a {
-                                text-decoration: none;
-                                color: rgb(255, 222, 138);
-                            }
+                        a {
+                            text-decoration: none;
+                            color: rgb(255, 222, 138);
                         }
                     }
                 }
