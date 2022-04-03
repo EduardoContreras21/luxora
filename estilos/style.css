@@ -18,6 +18,7 @@ body {
     "main"
     "footer"; }
 
+    /* HEADER */
   .navbar-light #navbarNavDropdown .navbar-nav .nav-link.active,
   .navbar-light #navbarNavDropdown .navbar-nav .show>.nav-link,
   .navbar-light #navbarNavDropdown .navbar-nav .nav-link {
@@ -52,6 +53,7 @@ img{
   height: 200px;
 }
 
+/* INDEX */
 .hero-section{
   background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.507)); 
   background-image: url(../imagenes/hero-section.jpg);
@@ -100,50 +102,6 @@ section {
   grid-area: main;
   padding: 0 4%;
 }
-
-.servicios-principales.etiquetas {
-  display: flex;
-  flex-direction: column;
-  margin-top: 50px;
-  background-color: #3f0c20;
-}
-
-.etiquetas {
-  margin: 20px 0;
-}
-
-.etiquetas .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.etiquetas .container > div {
-  flex-basis: 33%;
-  min-width: 300px;
-  max-width: 300px;
-  margin: 20px;
-  background-color: #3f0c20;
-  color: white;
-}
-
-.formulario-contacto {
-  max-width: 1000px;
-  display: flex;
-  background-color: white;
-  padding: 20px;
-  margin: 40px auto;
-  flex-direction: column;
-}
-
-.forma-contacto {
-  margin-bottom: 20px;
-}
-
-.forma-contacto p:first-child {
-  font-weight: bold;
-}
-
 .info-section {
   display: flex;
   width: 100%;
@@ -228,64 +186,7 @@ section {
   font-size: 2rem;
 }
 
-@media (max-width:385px){
-
-  h1{
-  display: none;
-}
-
-.derechos{
-display: none;
-}
-
-.direccion p{
-  display: none;
-}
-}
-
-@media (min-width:386px) and (max-width: 768px) {
-
-  h1{
-    display: none;
-  }
-
-  h2{
-  text-align: center;
-  }
-
-  .derechos{
-    width: 75%;
-  }
-
-  .direccion{
-    width: 75%;
-    display: inline-block;
-  }
-}
-
-@media (max-width: 1024px) {
-  h2{
-  text-align: center;
-  }
-
-  .hero {
-    flex-direction: column;
-  }
-
-  .hero .video {
-    margin-bottom: 50px;
-  }
-
-  .derechos{
-    width: 75%;
-  }
-
-  .direccion{
-    width: 75%;
-    display: inline-block;
-  }
-}
-
+/* NOSOTROS */
 .main-subpage {
   max-width: 1200px;
   margin: 0 auto;
@@ -304,7 +205,34 @@ display: none;
 .carousel-photos img {
   max-height: 750px;
 }
+/* SERVICIOS */
+.servicios-principales.etiquetas {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  background-color: #3f0c20;
+}
 
+.etiquetas {
+  margin: 20px 0;
+}
+
+.etiquetas .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.etiquetas .container > div {
+  flex-basis: 33%;
+  min-width: 300px;
+  max-width: 300px;
+  margin: 20px;
+  background-color: #3f0c20;
+  color: white;
+}
+
+/* PRECIOS */
 .precios-contenido {
   flex-direction: column;
   width: 100%;
@@ -343,6 +271,25 @@ display: none;
   height: 300px;
 }
 
+/* CONTACTO */
+.formulario-contacto {
+  max-width: 1000px;
+  display: flex;
+  background-color: white;
+  padding: 20px;
+  margin: 40px auto;
+  flex-direction: column;
+}
+
+.forma-contacto {
+  margin-bottom: 20px;
+}
+
+.forma-contacto p:first-child {
+  font-weight: bold;
+}
+
+/* FOOTER */
 .footer {
   background-color: black;
   display: flex;
@@ -377,3 +324,61 @@ display: none;
     color: #ffde8a;
   }
 
+  /* MEDIA QUERIES */
+  @media (max-width:385px){
+
+    h1{
+    display: none;
+  }
+  
+  .derechos{
+  display: none;
+  }
+  
+  .direccion p{
+    display: none;
+  }
+  }
+  
+  @media (min-width:386px) and (max-width: 768px) {
+  
+    h1{
+      display: none;
+    }
+  
+    h2{
+    text-align: center;
+    }
+  
+    .derechos{
+      width: 75%;
+    }
+  
+    .direccion{
+      width: 75%;
+      display: inline-block;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    h2{
+    text-align: center;
+    }
+  
+    .hero {
+      flex-direction: column;
+    }
+  
+    .hero .video {
+      margin-bottom: 50px;
+    }
+  
+    .derechos{
+      width: 75%;
+    }
+  
+    .direccion{
+      width: 75%;
+      display: inline-block;
+    }
+  }

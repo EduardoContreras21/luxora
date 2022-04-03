@@ -1,36 +1,94 @@
+//INDEX//
+.hero-section{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.507)); 
+    background-image: url(../imagenes/hero-section.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .hero {
+        width: 100%;
+        display: flex;
+        margin: 0 auto;
+        background: #fff;
+        padding: 50px;
+
+    video{
+        height: 300px; 
+        width: 300px;
+
 section {
     display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
-    color: white;
     grid-area: main;
+    padding: 0 4%;
 
-    div {
-        color: white;
-        text-align: center;
-        margin-top: 15px;
-        padding: 5px;
-        margin: 5px;
+    .info-section {
         display: flex;
+        width: 100%;
+        padding: 0;
+        background: white;
         justify-content: center;
-        padding-top: 35px;
+        text-align: justify;
+        padding: 50px 4%;
+        flex-direction: column;
 
-        h2 {
-            color:$secondcolor;
-            text-align: center;
+        .info-contenido {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 20px;
+            width: 100%;
 
-            h3 {
-                color: $secondcolor;
-                text-align: center;
+            .info-contenido > div {
+                flex-basis: 33%;
+                min-width: 300px;
+                max-width: 300px;
+                margin: 20px;
 
-                p {
-                    text-align: center;
+                .info {
+                    display: flex;
+                    justify-content: center;
 
-                    &:hover {
-                        background-color: $primarycolor;
-                        transform: scale(1.2);
-                        transition: all 2s;
+                    .info-item {
+                        display: flex;
+                        flex-direction: column;
+                        max-width: 200px;
+                        width: 200px;
+
+                    .info-label {
+                        font-size: 1.5rem;
+                        color: gray;
+
+                    .info-title {
+                        font-size: 2.5rem;
+
+        .info-servicios {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .info-servicios > div {
+                flex-basis: 33%;
+                min-width: 300px;
+                max-width: 300px;
+                margin: 20px;
+
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -38,28 +96,28 @@ section {
     }
 }
 
-.hero {
-    width: 100%;
-    display: flex;
+.main-subpage {
+    max-width: 1200px;
     margin: 0 auto;
-    background: #fff;
-    padding: 50px;
+    padding: 50px 0;
 
-    section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        list-style: none;
-        grid-area: main;
+    .main-subpage h2 {
         padding: 0 4%;
-
-        h2,
-        h3 {
-            color: $secondcolor;
-        }
     }
 }
 
+// NOSOTROS//
+.carousel-photos {
+    max-width: 70%;
+    min-width: 320px;
+    margin: 50px auto;
+
+    .carousel-photos img {
+        max-height: 400px;
+    }
+}
+
+//SERVICIOS//
 .servicios-principales.etiquetas {
     display: flex;
     flex-direction: column;
@@ -83,111 +141,6 @@ section {
     }
 }
 
-.info-section {
-    display: flex;
-    width: 100%;
-    padding: 0;
-    background: white;
-    justify-content: center;
-    text-align: justify;
-    padding: 50px 4%;
-    flex-direction: column;
-
-    .info-contenido {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 20px;
-        width: 100%;
-
-        .info-contenido>div {
-            flex-basis: 33%;
-            min-width: 300px;
-            max-width: 300px;
-            margin: 20px;
-
-            .info-contenido>div:first-child {
-                margin-left: 0;
-
-                .info-contenido .info-label {
-                    font-size: 1.2rem;
-
-                    .info-contenido .info-title {
-                        font-size: 2rem;
-                    }
-
-                    .info {
-                        display: flex;
-                        justify-content: center;
-
-                        .info-item {
-                            display: flex;
-                            flex-direction: column;
-                            max-width: 200px;
-                            width: 200px;
-
-                            .info-label {
-                                font-size: 1.5rem;
-                                color: gray;
-
-                                .info-title {
-                                    font-size: 2.5rem;
-
-                                    .info-servicios {
-                                        display: flex;
-                                        flex-wrap: wrap;
-                                        justify-content: center;
-
-                                        .info-servicios>div {
-                                            flex-basis: 33%;
-                                            min-width: 300px;
-                                            max-width: 300px;
-                                            margin: 20px;
-
-                                            .info-servicios>div:first-child {
-                                                margin-left: 0;
-
-                                                .info-servicios .info-label {
-                                                    font-size: 1.2rem;
-
-                                                    .info-servicios .info-title {
-                                                        font-size: 2rem;
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-// NOSOTROS//
-.carousel-photos {
-    max-width: 70%;
-    min-width: 320px;
-    margin: 50px auto;
-
-    .carousel-photos img {
-        max-height: 400px;
-    }
-}
-
-//SERVICIOS//
-.main-subpage {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 50px 0;
-
-    .main-subpage h2 {
-        padding: 0 4%;
-    }
-}
-
 //PRECIOS//
 .precios-contenido {
     flex-direction: column;
@@ -202,19 +155,24 @@ section {
         padding: 20px;
         border-bottom: 3px solid gray;
 
-        .precios-lista {
-            margin-top: 30px;
+    .precios-lista {
+        margin-top: 30px;
 
-            .precios-item {
-                display: flex;
-                justify-content: space-between;
-                padding: 20px;
+        .precios-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
 
-                .precios-item h5 {
-                    text-transform: uppercase;
+            .precios-item h5 {
+                text-transform: uppercase;
 
-                    .precios-item p {
-                        padding-right: 50px;
+            .precios-item p {
+                padding-right: 50px;
+
+            .imagen {
+                width: 150px;
+                height: 300px;
+                        }
                     }
                 }
             }

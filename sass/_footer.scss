@@ -9,31 +9,22 @@
     .snfooter {
         margin-top: 20px;
 
-        .encabezado-footer {
-            display: flex;
-            justify-content: space-around;
-            border-top: 3px solid #ffde8a;
+    .encabezado-footer {
+        display: flex;
+        justify-content: space-around;
+        border-top: 3px solid #ffde8a;
 
-            .footer div p {
-                color: #ffde8a;
-                margin-bottom: 15px;
+            .navbar-footer {
+                list-style: none;
+                text-align: left;
+                margin-bottom: 32px;
 
-                .footer div p div a {
-                    display: flex;
-                    margin-top: 15px;
+                .nav-foot {
+                    text-decoration: none;
+                    color: #ffde8a;
 
-                    .navbar-footer {
-                        list-style: none;
-                        text-align: left;
-
-                        .nav-foot {
-                            text-decoration: none;
-                            color: #ffde8a;
-
-                            .derechos-reservados {
-                                text-align: end;
-                            }
-                        }
+    .encuentranos {
+    margin-top: 10px;
                     }
                 }
             }
